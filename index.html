@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Investment Calculator</title>
+    </head>
+    <body>
+        <h1>Investment Calculator</h1>
+        <p>A simple investment calculator that takes an initial investment amount in dollars. Then accepts an interest rate between 2-7%. Then takes an additional amount of money for each term of the investment. Enter a investment term(ie. how long). Then specify that the term will be in years or months. Result will be your total interest earned and the total amount in your account.</p><br>
+        <ol>
+            <li>START</li>
+            <ul>
+                <li>Declare totalAmount</li>
+                <li>Declare initInvestment</li>
+                <li>Declare addInvestment</li>
+                <li>Declare interestRate</li>
+            </ul>
+            <li>DISPLAY what will be your inital investment</li>
+            <li>INPUT for the initInvestment</li>
+            <li>DISPLAY what rate are you comfortable with</li>
+            <li>INPUT for the interestRate</li>
+            <li>DISPLAY do you want to make any additional investments</li>
+            <li>INPUT for the addInvestment</li>
+            <li>DISPLAY this is your rate and this is what left in the account</li>
+            <li>END</li>
+        </ol>
+        <form>
+            <p>What will be your inital investment</p>
+            <br>
+            <input type="number" id="initInvestment">
+            <br>
+            <p>What rate are you comfortable with at this moment</p>
+            <br>
+            <input type="number"  id="interestRate">
+            <br>
+            <p>do you want to make any additional investments</p>
+            <br>
+            <input type="number"  id="addInvestment">
+            <br>
+            <input type="submit" value="Submit" onclick="calculate ()">
+        </form>
+        <span id="calculation"></span>
+    </body>
+    <script>
+        function calculate(){
+            event.preventDefault();
+            initInvestment = parseInt(document.getElementById("initInvestment").value);
+            console.log(initInvestment);
+            interestRate = parseInt(document.getElementById("interestRate").value);
+            console.log(interestRate);
+            addInvestment = parseInt(document.getElementById("addInvestment").value);
+            calculation = document.getElementById("calculation")
+            if(interestRate === 2){
+                totalAmount = .02 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .02;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.02;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + addInvestment + 25 + 25).toFixed(1);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            if(interestRate === 3){
+                totalAmount = .03 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .03;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.03;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + addInvestment + 25 + 25).toFixed(1);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            if(interestRate === 4){
+                totalAmount = .04 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .04;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.04;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + addInvestment + 25 + 25).toFixed(1);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            if(interestRate === 5){
+                totalAmount = .05 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .05;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.05;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + addInvestment + 25 + 25).toFixed(1);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            if(interestRate === 6){
+                totalAmount = .06 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .06;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.06;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + 25 + 25 + 25);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            if(interestRate === 7){
+                totalAmount = .07 * initInvestment;
+                totalAmount2 = initInvestment + 25 + 25;
+                totalAmount3 = totalAmount2 * .07;
+                totalAmount4 = totalAmount2 + totalAmount3 + 25;
+                totalAmount5 = totalAmount4 *.07;
+                totalAmount6 = totalAmount4 + totalAmount5 + 25;
+                totalAmount7 = totalAmount6 - (initInvestment + addInvestment + 25 + 25).toFixed(1);
+                console.log(totalAmount);
+                console.log(totalAmount2);
+                console.log(totalAmount3);
+                console.log(totalAmount4);
+                console.log(totalAmount5);
+                console.log(totalAmount6);
+                console.log(totalAmount7);
+            }
+            calculation.innerHTML = "this is rate is " + interestRate  + " % " + " and this is what left " + totalAmount7 
+        }
+    </script>
+</html>
